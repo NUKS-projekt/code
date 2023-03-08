@@ -1,0 +1,404 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;;
+}
+
+/* -----header-----*/
+header{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #131A22;
+    width:100%;
+    height:56px;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+
+.header-center{
+
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left:10px;
+    position:relative;
+}
+.header-center-input{
+    margin-top: 10px;
+    height: 36px;
+    width:100%;
+    border:none;
+    text-align: left;
+    padding-left: 20px;
+    cursor: auto;
+    border-radius: 2px;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    left: 94%;
+    top: 35%;
+    font-size: 18px;
+    color:#131A22
+    
+}
+
+/*login btn*/
+
+.login{
+    position: relative;
+    left:45px;
+    margin-top: 17px;
+
+}
+
+.login_btn{
+    color:#131A22;
+    border-radius: 2px;
+    border: 1px #ff9900;
+    background:#ff9900;
+    opacity: 1;
+    height: 32px;
+    letter-spacing: 1px;
+    padding: 6px 40px;
+    font-weight: bold;
+    margin: 0px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login_btn:hover{
+
+    opacity:0.8;
+}
+
+.more{
+    position: relative;
+    margin-top: 17px;
+}
+.cart{
+
+    margin-top: 17px;
+    margin-right: 60px;
+}
+
+.none{
+    display: none;
+}
+
+.flex{
+
+    display: flex;
+
+}
+.more-icon{
+    color: #131A22;
+    margin-left: 15px;
+    
+
+}
+.more_lan{
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
+    
+
+}
+
+.pointer{
+
+    width: 20px;
+    height: 20px;
+    background: white;
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+    left: 80%;
+}
+
+.fa-angle-down:hover{
+    transform: rotate(180deg);
+}
+
+.more_dropdown, .login_dropdown{
+    position: relative;
+    top:12px;
+
+}
+
+.login_dropdown_list, .more_dropdown_list{
+
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0 4px 16px - rgb(0 0 0 / 20%);
+    min-width: 240px;
+    transform: translate(-30px);
+
+}
+
+.login_drop_li{
+
+    padding: 16px 20px;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.login_drop_li .fa-solid{
+    color: #131A22;
+    padding-right: 10px;
+}
+
+.login_drop_li:hover{
+    background: rgb(217,217,217);
+}
+.login_drop_li:first-child{
+    padding: 20px;
+}
+
+
+.login_drop_li:last-child{
+    padding: 20px;
+}
+.login:hover .login_dropdown, .more:hover .more_dropdown{
+    display:block;
+
+}
+
+.sign_up{
+    text-decoration: none;
+    color:#131A22
+
+}
+
+.sign_up:hover{
+    text-decoration: underline;
+}
+
+.sign_Li{
+
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.new_login{
+    font-weight: bold;
+}
+
+.cart_lan .fa-cart-shopping{
+    padding-right: 12px;
+    padding-top: 20px;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+/**** HEADER COMPLETED ****/
+
+
+/*** category section ****/
+.category-row{
+
+    display: flex;
+    justify-self: space-evenly;
+    background: #232F3E;
+    width: 100%;
+    height: 40px;
+    
+    margin-top: 0;
+    
+    
+}
+
+.category-col{
+    position: relative;
+    color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 10px;
+    cursor: pointer;
+    
+    
+}
+
+.category-col-last{
+    color: white;
+    
+    padding-right: 0;
+    padding-left: 60px;
+    padding-top: 10px;
+    cursor: pointer;
+    text-align: end;
+    
+    
+}
+.category-col:hover{
+
+    border: solid white;
+    border-width: 5px;
+    margin: -3px;
+}
+.category-col-last:hover{
+
+    border: solid white;
+    border-width: 5px;
+    margin: -3px;
+}
+
+/***** banner section *****/
+
+
+.slideshow-container {
+    
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    width: 100%;
+    height: 350px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .active{
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+ /* deals of the day**/
+ .deals{
+
+    box-shadow: rgb(177, 174, 174) 0px 0px 5px 1px;
+    padding: 10px 0px;
+    margin: 10px 5px;
+    border-radius: 5px;
+ }
+ .heading_deals{
+    
+    
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 20px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0/ 16%);
+ }
+ 
+
+ .common-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 366px;
+    margin: 10px 0px;
+ }
+  
+
+ .sale{
+    height: 18px;
+    width:fit-content;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: red;
+    cursor: pointer;
+   
+ }
+
+ .common-col img{
+
+    height: 150px;
+    width: 150px;
+    transition: 300ms;
+    cursor: pointer;
+ }
+ 
+
+ /******footer*******/
+
+ footer{
+    
+    background-color: #232f3e;
+    width:100%;
+    height:500px;
+    
+}
+
+.footer-row{
+    width:100%;
+    height: 400px;
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-evenly;
+}
+
+.footer-row2-col{
+    display: flex;
+    border-top: 1px solid rgb(86, 82, 82) ;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 20px;
+}
+
+.box_footer{
+    color:white;
+    cursor:pointer;
+}
+
+
+.footer-list a{
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: 5px 0px;
+}
+
+.footer-list a:hover{
+    text-decoration: underline;
+}
+
+.border_footer:hover{
+    border: solid white;
+    border-width: 3px;
+    line-height: 10px;
+    cursor: pointer;
+}
